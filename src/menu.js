@@ -2,7 +2,7 @@ export default function showMenuPage() {
   const contentDiv = document.querySelector("#content");
   const heading = document.createElement("h1");
   const menu = document.createElement("ul");
-  const menuItems = Array.from({ length: 10 }, () =>
+  const menuItems = Array.from({ length: 100 }, () =>
     document.createElement("li")
   );
   heading.textContent = "Menu";

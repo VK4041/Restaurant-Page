@@ -1,11 +1,13 @@
+import bannerImage from "./home-image.jpg";
+
 export default function showHomePage() {
   const contentDiv = document.querySelector("#content");
   const heading = document.createElement("h1");
-  const subHeading = document.createElement("p");
-
-  heading.textContent = "Poozoo Bites Restaurant";
-  subHeading.textContent = "Authentic Indian Cuisine";
+  const homeImg = document.createElement("img");
+  heading.textContent = "Authentic Indian Restaurant";
+  homeImg.src = bannerImage;
+  homeImg.classList.add("banner-image");
 
   contentDiv.appendChild(heading);
-  contentDiv.appendChild(subHeading);
+  contentDiv.appendChild(homeImg);
 }

@@ -125,4 +125,3 @@ class Item {
     return itemContainer;
   }
 }
-function appendMenuItem(container) {}

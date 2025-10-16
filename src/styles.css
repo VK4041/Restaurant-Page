@@ -8,7 +8,7 @@ body {
   font-family: "Times New Roman", Times, serif;
   display: flex;
   flex-direction: column;
-  background-image: url("./background-image.jpg");
+  background-image: url("./Images/background-image.jpg");
   background-size: 20%;
 }
 header {
@@ -52,16 +52,62 @@ nav > button:active {
 #content {
   display: flex;
   flex-direction: column;
-  align-items: center;
   flex: 1;
   background-color: rgb(231, 231, 135);
   margin: 1rem 20%;
   border-radius: 5px;
   padding: 1rem;
 }
+.item-container {
+  display: flex;
+  gap: 1rem;
+  border-bottom: 2px dotted black;
+  padding: 1rem 0;
+}
+.item-container:hover {
+  background-color: rgba(41, 41, 33, 0.1);
+}
+.item-container:nth-last-child(1) {
+  border: none;
+}
+.name-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
 .banner-image {
   width: 100%;
   border-radius: 5px;
+  margin: auto;
+}
+.item-image {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+.item-name {
+  font-family: cursive;
+  font-size: 1rem;
+  font-weight: 900;
+  color: black;
+  flex: 1;
+}
+.item-desc {
+  font-family: arial;
+  font-size: 0.8rem;
+  font-style: italic;
+  flex: 1;
+}
+.item-price {
+  font-size: 1rem;
+  font-weight: 900;
+  align-self: center;
+}
+.item-price::before {
+  content: "$";
+}
+.item-price::after {
+  content: ".00/-";
 }
 footer {
   padding: 0.5rem;

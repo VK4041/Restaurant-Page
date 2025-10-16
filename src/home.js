@@ -1,4 +1,4 @@
-import bannerImage from "./home-image.jpg";
+import bannerImage from "./Images/home-image.jpg";
 
 export default function showHomePage() {
   const contentDiv = document.querySelector("#content");
